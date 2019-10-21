@@ -1,0 +1,5 @@
+21.10.2019
+-instrukcja decyzyjna (warunkowa)
+-instrukcja iteracyjna (iteracja = powtarzanie)
+
+for i while
