@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+    //console.log('DOM fully loaded and parsed');
+        var main = document.getElementById("test")
+        console.log(main)
+        var kolorek = 606000
+       
+        main.style.height = "500px"
+        //main.style.backgroundColor = "#aa11aa"
+        setInterval(function(){ 
+            //main.style.backgroundColor = "#" + kolorek
+            main.style.background = 'radial-gradient( #' + kolorek +','+ "#" + (kolorek+5000) +','+ "#" + (kolorek+10000)+")";
+            kolorek += 105
+            console.log(kolorek)
+            if(kolorek> 999999){
+                kolorek = 100000
+            }
+
+        }, 50);
+    });
+    </script>
+</head>
+<body>
+    <div id="test">
+        <p>Test</p>
+    </div>
+</body>
+</html>
